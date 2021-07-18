@@ -1,6 +1,7 @@
 dominio\Carrera.class
 dominio\Conductor.class
 dominio\Carril.class
+datos\Conexion.class
 dominio\ConductorMaquina.class
 dominio\Pista.class
 dominio\Podio.class

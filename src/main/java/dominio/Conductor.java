@@ -10,6 +10,7 @@ public class Conductor {
     public int IdConductor;
     public String equipo;
     public double avance;
+    public int puesto; 
 
     public Conductor() {
     }
@@ -21,6 +22,17 @@ public class Conductor {
         this.equipo = equipo;
         this.avance=this.avance+avance;
     }
+//Constructor para registro Persona en base de datos
+    public Conductor(String nombre, String nacionalidad, int IdConductor, String equipo, double avance, int puesto) {
+        this.nombre = nombre;
+        this.nacionalidad = nacionalidad;
+        this.IdConductor = IdConductor;
+        this.equipo = equipo;
+        this.avance = avance;
+        this.puesto = puesto;
+    }
+    
+    
 
     public String getNombre() {
         return nombre;

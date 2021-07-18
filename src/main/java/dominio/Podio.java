@@ -5,39 +5,40 @@ package dominio;
 public class Podio {
     
     //Atributos
-    public Conductor primerPuesto;
-    public Conductor segundoPuesto;
-    public Conductor tercerPuesto;
+    public String primerPuesto;
+    public String segundoPuesto;
+    public String tercerPuesto;
     
     
-    public void definirPodio (Conductor primerPuesto, Conductor segundoPuesto,Conductor tercerPuesto){
+    public void definirPodio (String primerPuesto, String segundoPuesto,String tercerPuesto){
         this.primerPuesto=primerPuesto;
         this.segundoPuesto=segundoPuesto;
         this.tercerPuesto=tercerPuesto;
 }
 
-    public Conductor getPrimerPuesto() {
+    public String getPrimerPuesto() {
         return primerPuesto;
     }
 
-    public void setPrimerPuesto(Conductor primerPuesto) {
+    public void setPrimerPuesto(String primerPuesto) {
         this.primerPuesto = primerPuesto;
     }
 
-    public Conductor getSegundoPuesto() {
+    public String getSegundoPuesto() {
         return segundoPuesto;
     }
 
-    public void setSegundoPuesto(Conductor segundoPuesto) {
+    public void setSegundoPuesto(String segundoPuesto) {
         this.segundoPuesto = segundoPuesto;
     }
 
-    public Conductor getTercerPuesto() {
+    public String getTercerPuesto() {
         return tercerPuesto;
     }
 
-    public void setTercerPuesto(Conductor tercerPuesto) {
+    public void setTercerPuesto(String tercerPuesto) {
         this.tercerPuesto = tercerPuesto;
     }
-    
+
+   
 }

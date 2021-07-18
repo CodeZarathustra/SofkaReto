@@ -23,7 +23,7 @@ public class ConductorMaquina extends Conductor{
         n04.avance=new Dado().lanzarDado();
         //Quinto conductor
         Conductor n05= new Conductor("Lance Stroll","Canada",5,"Williams",0);
-        n05.avance=new Dado().lanzarDado();
+        n05.avance= new Dado().lanzarDado();
         
         ArrayList<Conductor> listaConductores= new ArrayList<Conductor>();
         listaConductores.add(0,n01);

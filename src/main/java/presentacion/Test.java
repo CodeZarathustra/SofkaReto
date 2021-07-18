@@ -83,7 +83,7 @@ public class Test {
             }   
         
     }
-        
+        nuevaCarrera.imprimirPodio();
        
     }
 }

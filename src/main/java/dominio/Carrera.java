@@ -622,4 +622,39 @@ public class Carrera {
         System.out.print("----------------------------------------------------");
         System.out.print("----------------------------------------------------");
     }
+    
+    public void imprimirPodio () {
+      //Instanciar un objeto Podio 
+      Podio nuevoPodio = new Podio ();
+      nuevoPodio.primerPuesto= primerPuestoNombre;
+      nuevoPodio.segundoPuesto= segundoPuestoNombre;
+      nuevoPodio.tercerPuesto=tercerPuestoNombre;
+      //Estructurar sentencia if para mensaje de ganador usuario
+      //Imprimir por consola Podio -Tabla
+        System.out.println("****************************************************");
+        System.out.println("PODIO CARRERA");
+        System.out.println("----------------------------------------------------");
+        System.out.println("  ");
+        System.out.print("|PUESTO  |");
+        System.out.print("|NOMBRE  |");
+        System.out.println("  ");
+        System.out.println("----------------------------------------------------");
+        System.out.print("|1  |");
+        System.out.print("| "+ nuevoPodio.primerPuesto+ " |");
+        System.out.println("----------------------------------------------------");
+        System.out.println("  ");
+        System.out.print("|2  |");
+        System.out.print("| "+ nuevoPodio.segundoPuesto+ " |");
+        System.out.println("----------------------------------------------------");
+        System.out.println("  ");
+        System.out.print("|3  |");
+        System.out.print("| "+ nuevoPodio.tercerPuesto+ " |");
+        System.out.println("----------------------------------------------------");
+        
+        if (nuevoPodio.primerPuesto==conductorCarrera.nombre) {
+            
+            System.out.println("ERES ALGUIEN CON SUERTE <3");
+            System.out.println("!FELICIDADES ERES EL GANADOR DE LA CARRERA!");
+        }
+    }
 }
