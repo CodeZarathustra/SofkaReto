@@ -15,18 +15,18 @@ import javax.swing.JOptionPane;
 public class Test {
     
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
+        //Scanner sc= new Scanner(System.in);
         //Mensaje de entrada
-        JOptionPane newPane= new JOptionPane ();
-        newPane.createDialog("Sofka Racing");
+        //JOptionPane newPane= new JOptionPane ();
+        //newPane.createDialog("Sofka Racing");
         //Instanciar Objetos para carrera;
         Conductor ConductorUsuario= new Conductor("Jorge Armando Blandon","Colombia", 1047,"Mercedes", 0);
-        Carro CarroUsuario= new Carro(ConductorUsuario, 00745, "Mercedes");
+        Carro CarroUsuario= new Carro(ConductorUsuario, 06, "Mercedes");
         Carril carrilUsuario= new Carril(07, CarroUsuario);
-        Pista pistaCarreraActual= new Pista ("Indianapolis","EE.UU", 40000, 7, 00123);
+        Pista pistaCarreraActual= new Pista ("Indianapolis","EE.UU", 4000, 7, 00123);
         ConductorMaquina cpu= new ConductorMaquina();
         cpu.creacionConductores();
-        newPane.createDialog("La carrera ha Comenzado ");
+        //newPane.createDialog("La carrera ha Comenzado ");
         Carrera nuevaCarrera= new Carrera("200 millas de Indianapolis","30-Julio-2021", pistaCarreraActual);
         nuevaCarrera.sacarConductores();
         nuevaCarrera.avanceCarrera(ConductorUsuario);
