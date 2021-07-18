@@ -28,45 +28,58 @@ public class Test {
         String fechaCarrera= "30-Julio-2021";
        
         
-        //Scanner sc= new Scanner(System.in);
-        //Mensaje de entrada
-        //JOptionPane newPane= new JOptionPane ();
-        //newPane.createDialog("Sofka Racing");
-        //Instanciar Objetos para carrera;
-        JOptionPane.showMessageDialog(null,"SOFKA RACING GAME\n ARE YOU READY? <>_<>");
-//        JOptionPane.showMessageDialog(null,"Bienvenido!");
-        nombreJugador=JOptionPane.showInputDialog("Ingrese Nombre de Jugador");
-        nacionalidadJugador=JOptionPane.showInputDialog("Ingrese Nacionalidad");
-        marcaAutoJugador=JOptionPane.showInputDialog("Ingrese Marca de Auto");
+        Scanner sc= new Scanner(System.in);
+        //Mensaje de Entrada
+        System.out.println("----------------------------------------------------");
+        System.out.println("SOFKA GAME RACE");
+        System.out.println("----------------------------------------------------");
+        //OJO-Estar atento a la conversion de datos
+        System.out.println("1. Ingrese nombre del Jugador: ");
+        nombreJugador=sc.nextLine();
+        System.out.println("....................................................");
+        System.out.println("2. Ingrese Nacionalidad del Jugador: ");
+        nacionalidadJugador=sc.nextLine();
+        System.out.println("....................................................");
+        System.out.println("3. Ingrese Marca de Automovil: ");
+        marcaAutoJugador=sc.nextLine();
         Conductor ConductorUsuario= new Conductor(nombreJugador,nacionalidadJugador, 77,marcaAutoJugador, 0);
         Carro CarroUsuario= new Carro(ConductorUsuario, 06, marcaAutoJugador);
         Carril carrilUsuario= new Carril(06, CarroUsuario);
         Pista pistaCarreraActual= new Pista (nombrePista,paisPista,longitudPista, numeroCarriles, codigoPista);
         //Datos de Pista
-        JOptionPane.showMessageDialog(null,"Pista: \n"+ nombrePista);
-        JOptionPane.showMessageDialog(null,"Pais: \n"+paisPista);
-        JOptionPane.showMessageDialog(null,"Kilometros: \n"+longitudPista);
-        JOptionPane.showMessageDialog(null,"Codigo de Pista: \n"+ codigoPista);
-      
+        System.out.println("----------------------------------------------------");
+        System.out.println("DATOS DE PISTA");
+        System.out.println("Pista: |"+ nombrePista);
+        System.out.println("Pais: |"+paisPista);
+        System.out.println("Kilometros: |"+longitudPista);
+        System.out.println("Codigo de Pista: |"+ codigoPista);
+        System.out.println("----------------------------------------------------");
+        //Incripción y creación de conductores
         ConductorMaquina cpu= new ConductorMaquina();
         cpu.creacionConductores();
         //newPane.createDialog("La carrera ha Comenzado ");
         Carrera nuevaCarrera= new Carrera(nombreCarrera,fechaCarrera, pistaCarreraActual);
         //Datos de Carrera
-        JOptionPane.showMessageDialog(null,"Carrera|\n"+ nombreCarrera);
-        JOptionPane.showMessageDialog(null,"Fecha: \n"+ fechaCarrera);
-        JOptionPane.showMessageDialog(null,"Pista: \n"+ pistaCarreraActual.nombrePista);
+        System.out.println("DATOS DE CIRCUITO");
+        System.out.println("Carrera |"+ nombreCarrera);
+        System.out.println("Fecha:  |"+ fechaCarrera);
+        System.out.println("Pista Asignada:  |"+ pistaCarreraActual.nombrePista);
+        System.out.println("----------------------------------------------------");
         //Datos conductor
-        JOptionPane.showMessageDialog(null,"Datos Jugador \n");
-        JOptionPane.showMessageDialog(null,"Nombre: \n"+ nombreJugador);
-        JOptionPane.showMessageDialog(null,"Nacionalidad: \n"+ nacionalidadJugador);
-        JOptionPane.showMessageDialog(null,"Auto: \n"+marcaAutoJugador);
-        JOptionPane.showMessageDialog(null,"Carril Asignado: \n"+ carrilUsuario.numeroCarril);
+        System.out.println("[DATOS DEL JUGADOR]");
+        System.out.println("Nombre: |"+ nombreJugador);
+        System.out.println("Nacionalidad: |"+ nacionalidadJugador);
+        System.out.println("Auto: |"+marcaAutoJugador);
+        System.out.println("Carril Asignado: |"+ carrilUsuario.numeroCarril);
+        System.out.println("----------------------------------------------------");
         //Mensaje Instruccion
-        JOptionPane.showMessageDialog(null,"A continuación tiene 3 intentos para lanzar dado");
+        System.out.println("*****************************************************");
+        System.out.println("A continuación tiene 3 intentos para lanzar dado");
+        System.out.println("*****************************************************");
         
         for (int i=0;i<3;i++) {
-            int imput =JOptionPane.showConfirmDialog(null,"Lanzar dado","Buena Suerte!",JOptionPane.DEFAULT_OPTION);
+            int imput;
+            imput = JOptionPane.showConfirmDialog(null,"Lanzar dado","Buena Suerte!",JOptionPane.DEFAULT_OPTION);
             
             if(imput==0) {
         nuevaCarrera.sacarConductores();
@@ -84,6 +97,6 @@ public class Test {
         
     }
         nuevaCarrera.imprimirPodio();
-       
+        nuevaCarrera.guardarDatos();
     }
 }

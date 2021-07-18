@@ -1,6 +1,7 @@
 
 package dominio;
 
+import datos.ConductorDAO;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
@@ -444,7 +445,7 @@ public class Carrera {
             primerPuestoNacionalidad = conductorCarrera.nacionalidad;
             primerPuestoKilometraje = conductorCarrera.avance;
              primerPuestoEquipo= conductorCarrera.equipo;
-             JOptionPane.showMessageDialog(null,"Felicidades!");
+             JOptionPane.showMessageDialog(null,"Felicidades Vas Primero!");
         } else {
             //Segundo Puesto
             if (tablaPosiciones[4] == conductorCarrera.avance) {
@@ -498,50 +499,6 @@ public class Carrera {
 
     }
 //------------------------------------------------------------------------------
-  
-  /*public void  definirPrimerPuesto (){  for(int i=0;i < pistaCarrera.kilometros;i++) {
-      if (conductorPosicion01.avance==pistaCarrera.kilometros){
-              primerPuestoID=conductorPosicion01.IdConductor;
-              primerPuestoNombre=conductorPosicion01.nombre;
-              primerPuestoNacionalidad=conductorPosicion01.nombre;
-              primerPuestoKilometraje=conductorPosicion01.avance;
-      }
-      if (conductorPosicion02.avance==pistaCarrera.kilometros){
-              primerPuestoID=conductorPosicion02.IdConductor;
-              primerPuestoNombre=conductorPosicion02.nombre;
-              primerPuestoNacionalidad=conductorPosicion02.nombre;
-              primerPuestoKilometraje=conductorPosicion02.avance;
-      }
-      if (conductorPosicion03.avance==pistaCarrera.kilometros){
-              primerPuestoID=conductorPosicion02.IdConductor;
-              primerPuestoNombre=conductorPosicion02.nombre;
-              primerPuestoNacionalidad=conductorPosicion02.nombre;
-              primerPuestoKilometraje=conductorPosicion02.avance;
-      }
-      if (conductorPosicion04.avance==pistaCarrera.kilometros){
-              primerPuestoID=conductorPosicion03.IdConductor;
-              primerPuestoNombre=conductorPosicion03.nombre;
-              primerPuestoNacionalidad=conductorPosicion03.nombre;
-              primerPuestoKilometraje=conductorPosicion03.avance; 
-      }
-      if (conductorPosicion05.avance==pistaCarrera.kilometros){
-              primerPuestoID=conductorPosicion04.IdConductor;
-              primerPuestoNombre=conductorPosicion04.nombre;
-              primerPuestoNacionalidad=conductorPosicion04.nombre;
-              primerPuestoKilometraje=conductorPosicion04.avance;
-      }
-      //Conductor Usuario
-      if (conductorCarrera.avance==pistaCarrera.kilometros){
-              primerPuestoID=conductorCarrera.IdConductor;
-              primerPuestoNombre=conductorCarrera.nombre;
-              primerPuestoNacionalidad=conductorCarrera.nombre;
-              primerPuestoKilometraje=conductorCarrera.avance;
-      }
-
-
-  }
-  }*/
-
 
   
     public void tablaCarrera() {
@@ -622,7 +579,7 @@ public class Carrera {
         System.out.print("----------------------------------------------------");
         System.out.print("----------------------------------------------------");
     }
-    
+    //--------------------------------------------------------------------------
     public void imprimirPodio () {
       //Instanciar un objeto Podio 
       Podio nuevoPodio = new Podio ();
@@ -651,10 +608,27 @@ public class Carrera {
         System.out.print("| "+ nuevoPodio.tercerPuesto+ " |");
         System.out.println("----------------------------------------------------");
         
-        if (nuevoPodio.primerPuesto==conductorCarrera.nombre) {
+        if (conductorCarrera.nombre==nuevoPodio.primerPuesto) {
             
             System.out.println("ERES ALGUIEN CON SUERTE <3");
             System.out.println("!FELICIDADES ERES EL GANADOR DE LA CARRERA!");
         }
     }
+    //--------------------------------------------------------------------------
+// Metodo para insertar datos podio
+    public void guardarDatos () {
+       ConductorDAO nuevoCondao= new ConductorDAO();
+       nuevoCondao.insertar(conductorPosicion01);
+       nuevoCondao.insertar(conductorPosicion02);
+       nuevoCondao.insertar(conductorPosicion03);
+       nuevoCondao.insertar(conductorPosicion04);
+       nuevoCondao.insertar(conductorPosicion05);
+       nuevoCondao.insertar(conductorCarrera);
+       
+        System.out.println("---------------------------------------------------");
+        System.out.println("LOS DATOS DE LOS PARTICIPANTES HAN SIDO GUARDADOS");
+    };
+
+
+
 }

@@ -7,4 +7,5 @@ dominio\Pista.class
 dominio\Podio.class
 dominio\Dado.class
 presentacion\Test.class
+datos\ConductorDAO.class
 dominio\Carro.class

@@ -73,6 +73,14 @@ public class Conductor {
     public void setAvance(int avance) {
         this.avance = avance;
     }
+
+    public int getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(int puesto) {
+        this.puesto = puesto;
+    }
     
     
     
