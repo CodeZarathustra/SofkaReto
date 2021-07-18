@@ -19,31 +19,38 @@ public class Carrera {
     public String primerPuestoNombre;
     public String primerPuestoNacionalidad;
     public double primerPuestoKilometraje;
+    public String primerPuestoEquipo;
     //SegundoPuesto
     public int segundoPuestoID;
     public String segundoPuestoNombre;
     public String segundoPuestoNacionalidad;
     public double segundoPuestoKilometraje;
+    public String segundoPuestoEquipo;
     //TercerPuesto
     public int tercerPuestoID;
     public String tercerPuestoNombre;
     public String tercerPuestoNacionalidad;
     public double tercerPuestoKilometraje;
+    public String tercerPuestoEquipo;
     //Cuarto puerto
     public int cuartoPuestoID;
     public String cuartoPuestoNombre;
     public String cuartoPuestoNacionalidad;
     public double cuartoPuestoKilometraje;
+    public String cuartoPuestoEquipo;
+    
     //Quinto puesto 
     public int quintoPuestoID;
     public String quintoPuestoNombre;
     public String quintoPuestoNacionalidad;
     public double quintoPuestoKilometraje;
+    public String quintoPuestoEquipo;
     //SextoPuesto
     public int sextoPuestoID;
     public String sextoPuestoNombre;
     public String sextoPuestoNacionalidad;
     public double sextoPuestoKilometraje;
+    public String sextoPuestoEquipo;
     //-------------------------------------------------------------------------
     //Objetos conductor Maquina y Jugador Usuario
     public Conductor conductorPosicion01;
@@ -128,6 +135,7 @@ public class Carrera {
             primerPuestoNombre = conductorPosicion01.nombre;
             primerPuestoNacionalidad = conductorPosicion01.nacionalidad;
             primerPuestoKilometraje = conductorPosicion01.avance;
+            primerPuestoEquipo= conductorPosicion01.equipo;
         } else {
             //Segundo Puesto
             if (tablaPosiciones[4] == conductorPosicion01.avance) {
@@ -135,6 +143,7 @@ public class Carrera {
                 segundoPuestoNombre = conductorPosicion01.nombre;
                 segundoPuestoNacionalidad = conductorPosicion01.nacionalidad;
                 segundoPuestoKilometraje = conductorPosicion01.avance;
+                segundoPuestoEquipo= conductorPosicion01.equipo;
             } else {
                 //Condicional Tercer Puesto
                 if (tablaPosiciones[3] == conductorPosicion01.avance) {
@@ -142,6 +151,7 @@ public class Carrera {
                     tercerPuestoNombre = conductorPosicion01.nombre;
                     tercerPuestoNacionalidad = conductorPosicion01.nacionalidad;
                     tercerPuestoKilometraje = conductorPosicion01.avance;
+                    tercerPuestoEquipo= conductorPosicion01.equipo;
                 } else {
                     //  Cuarto puesto
                     if (tablaPosiciones[2] == conductorPosicion01.avance) {
@@ -149,6 +159,7 @@ public class Carrera {
                         cuartoPuestoNombre = conductorPosicion01.nombre;
                         cuartoPuestoNacionalidad = conductorPosicion01.nacionalidad;
                         cuartoPuestoKilometraje = conductorPosicion01.avance;
+                        cuartoPuestoEquipo= conductorPosicion01.equipo;
                     } else {
                         //Quinto puesto
                         if (tablaPosiciones[1] == conductorPosicion01.avance) {
@@ -156,6 +167,7 @@ public class Carrera {
                             quintoPuestoNombre = conductorPosicion01.nombre;
                             quintoPuestoNacionalidad = conductorPosicion01.nacionalidad;
                             quintoPuestoKilometraje = conductorPosicion01.avance;
+                            quintoPuestoEquipo= conductorPosicion01.equipo;
                         } else {
                             //Sexto puesto
                             if (tablaPosiciones[0] == conductorPosicion01.avance) {
@@ -163,6 +175,7 @@ public class Carrera {
                                 sextoPuestoNombre = conductorPosicion01.nombre;
                                 sextoPuestoNacionalidad = conductorPosicion01.nacionalidad;
                                 sextoPuestoKilometraje = conductorPosicion01.avance;
+                                sextoPuestoEquipo= conductorPosicion01.equipo;
                             }
                         }
 
@@ -186,6 +199,7 @@ public class Carrera {
             primerPuestoNombre = conductorPosicion02.nombre;
             primerPuestoNacionalidad = conductorPosicion02.nacionalidad;
             primerPuestoKilometraje = conductorPosicion02.avance;
+            primerPuestoEquipo= conductorPosicion02.equipo;
         } else {
             //Segundo Puesto
             if (tablaPosiciones[4] == conductorPosicion02.avance) {
@@ -193,6 +207,7 @@ public class Carrera {
                 segundoPuestoNombre = conductorPosicion02.nombre;
                 segundoPuestoNacionalidad = conductorPosicion02.nacionalidad;
                 segundoPuestoKilometraje = conductorPosicion02.avance;
+                segundoPuestoEquipo= conductorPosicion02.equipo;
             } else {
                 // Tercer Puesto
                 if (tablaPosiciones[3] == conductorPosicion02.avance) {
@@ -200,6 +215,7 @@ public class Carrera {
                     tercerPuestoNombre = conductorPosicion02.nombre;
                     tercerPuestoNacionalidad = conductorPosicion02.nacionalidad;
                     tercerPuestoKilometraje = conductorPosicion02.avance;
+                    tercerPuestoEquipo= conductorPosicion02.equipo;
                 } else {
                     //Cuarto puesto
                     if (tablaPosiciones[2] == conductorPosicion02.avance) {
@@ -207,6 +223,7 @@ public class Carrera {
                         cuartoPuestoNombre = conductorPosicion02.nombre;
                         cuartoPuestoNacionalidad = conductorPosicion02.nacionalidad;
                         cuartoPuestoKilometraje = conductorPosicion02.avance;
+                        cuartoPuestoEquipo= conductorPosicion02.equipo;
                     } else {
                         //Quinto puesto
                         if (tablaPosiciones[1] == conductorPosicion02.avance) {
@@ -214,6 +231,7 @@ public class Carrera {
                             quintoPuestoNombre = conductorPosicion02.nombre;
                             quintoPuestoNacionalidad = conductorPosicion02.nacionalidad;
                             quintoPuestoKilometraje = conductorPosicion02.avance;
+                            quintoPuestoEquipo= conductorPosicion02.equipo;
                         } else {
                             //Sexto puesto
                             if (tablaPosiciones[0] == conductorPosicion02.avance) {
@@ -221,6 +239,7 @@ public class Carrera {
                                 sextoPuestoNombre = conductorPosicion02.nombre;
                                 sextoPuestoNacionalidad = conductorPosicion02.nacionalidad;
                                 sextoPuestoKilometraje = conductorPosicion02.avance;
+                                sextoPuestoEquipo= conductorPosicion02.equipo;
                             }
                         }
 
@@ -241,6 +260,7 @@ public class Carrera {
             primerPuestoNombre = conductorPosicion03.nombre;
             primerPuestoNacionalidad = conductorPosicion03.nacionalidad;
             primerPuestoKilometraje = conductorPosicion03.avance;
+            primerPuestoEquipo= conductorPosicion03.equipo;
         } else {
             //Segundo Puesto
             if (tablaPosiciones[4] == conductorPosicion03.avance) {
@@ -248,6 +268,7 @@ public class Carrera {
                 segundoPuestoNombre = conductorPosicion03.nombre;
                 segundoPuestoNacionalidad = conductorPosicion03.nacionalidad;
                 segundoPuestoKilometraje = conductorPosicion03.avance;
+                segundoPuestoEquipo= conductorPosicion03.equipo;
             } else {
                 //Tercer Puesto
                 if (tablaPosiciones[3] == conductorPosicion03.avance) {
@@ -255,6 +276,7 @@ public class Carrera {
                     tercerPuestoNombre = conductorPosicion03.nombre;
                     tercerPuestoNacionalidad = conductorPosicion03.nacionalidad;
                     tercerPuestoKilometraje = conductorPosicion03.avance;
+                    tercerPuestoEquipo= conductorPosicion03.equipo;
                 } else {
                     //  Cuarto puesto
                     if (tablaPosiciones[2] == conductorPosicion03.avance) {
@@ -262,6 +284,7 @@ public class Carrera {
                         cuartoPuestoNombre = conductorPosicion03.nombre;
                         cuartoPuestoNacionalidad = conductorPosicion03.nacionalidad;
                         cuartoPuestoKilometraje = conductorPosicion03.avance;
+                        cuartoPuestoEquipo= conductorPosicion03.equipo;
                     } else {
                         //Quinto puesto
                         if (tablaPosiciones[1] == conductorPosicion03.avance) {
@@ -269,6 +292,7 @@ public class Carrera {
                             quintoPuestoNombre = conductorPosicion03.nombre;
                             quintoPuestoNacionalidad = conductorPosicion03.nacionalidad;
                             quintoPuestoKilometraje = conductorPosicion03.avance;
+                            quintoPuestoEquipo= conductorPosicion03.equipo;
                         } else {
                             //Sexto puesto
                             if (tablaPosiciones[0] == conductorPosicion03.avance) {
@@ -276,6 +300,7 @@ public class Carrera {
                                 sextoPuestoNombre = conductorPosicion03.nombre;
                                 sextoPuestoNacionalidad = conductorPosicion03.nacionalidad;
                                 sextoPuestoKilometraje = conductorPosicion03.avance;
+                                sextoPuestoEquipo= conductorPosicion03.equipo;
                             }
                         }
 
@@ -295,6 +320,7 @@ public class Carrera {
             primerPuestoNombre = conductorPosicion04.nombre;
             primerPuestoNacionalidad = conductorPosicion04.nacionalidad;
             primerPuestoKilometraje = conductorPosicion04.avance;
+            primerPuestoEquipo= conductorPosicion04.equipo;
         } else {
             //Segundo Puesto
             if (tablaPosiciones[4] == conductorPosicion04.avance) {
@@ -302,6 +328,7 @@ public class Carrera {
                 segundoPuestoNombre = conductorPosicion04.nombre;
                 segundoPuestoNacionalidad = conductorPosicion04.nacionalidad;
                 segundoPuestoKilometraje = conductorPosicion04.avance;
+                segundoPuestoEquipo= conductorPosicion04.equipo;
             } else {
                 //Condicional Tercer Puesto
                 if (tablaPosiciones[3] == conductorPosicion04.avance) {
@@ -309,6 +336,7 @@ public class Carrera {
                     tercerPuestoNombre = conductorPosicion04.nombre;
                     tercerPuestoNacionalidad = conductorPosicion04.nacionalidad;
                     tercerPuestoKilometraje = conductorPosicion04.avance;
+                    tercerPuestoEquipo= conductorPosicion04.equipo;
                 } else {
                     //  Cuarto puesto
                     if (tablaPosiciones[2] == conductorPosicion04.avance) {
@@ -316,6 +344,7 @@ public class Carrera {
                         cuartoPuestoNombre = conductorPosicion04.nombre;
                         cuartoPuestoNacionalidad = conductorPosicion04.nacionalidad;
                         cuartoPuestoKilometraje = conductorPosicion04.avance;
+                        cuartoPuestoEquipo= conductorPosicion04.equipo;
                     } else {
                         //Quinto puesto
                         if (tablaPosiciones[1] == conductorPosicion04.avance) {
@@ -323,6 +352,7 @@ public class Carrera {
                             quintoPuestoNombre = conductorPosicion04.nombre;
                             quintoPuestoNacionalidad = conductorPosicion04.nacionalidad;
                             quintoPuestoKilometraje = conductorPosicion04.avance;
+                            quintoPuestoEquipo= conductorPosicion04.equipo;
                         } else {
                               //Sexto puesto
                             if (tablaPosiciones[0] == conductorPosicion04.avance) {
@@ -330,6 +360,7 @@ public class Carrera {
                                 sextoPuestoNombre = conductorPosicion04.nombre;
                                 sextoPuestoNacionalidad = conductorPosicion04.nacionalidad;
                                 sextoPuestoKilometraje = conductorPosicion04.avance;
+                                sextoPuestoEquipo= conductorPosicion04.equipo;
                             }
                         }
                       
@@ -350,6 +381,7 @@ public class Carrera {
             primerPuestoNombre = conductorPosicion05.nombre;
             primerPuestoNacionalidad = conductorPosicion05.nacionalidad;
             primerPuestoKilometraje = conductorPosicion05.avance;
+            primerPuestoEquipo= conductorPosicion05.equipo;
         } else {
             //Segundo Puesto
             if (tablaPosiciones[4] == conductorPosicion05.avance) {
@@ -357,6 +389,7 @@ public class Carrera {
                 segundoPuestoNombre = conductorPosicion05.nombre;
                 segundoPuestoNacionalidad = conductorPosicion05.nacionalidad;
                 segundoPuestoKilometraje = conductorPosicion05.avance;
+                segundoPuestoEquipo= conductorPosicion05.equipo;
             } else {
                 // Tercer Puesto
                 if (tablaPosiciones[3] == conductorPosicion05.avance) {
@@ -364,6 +397,7 @@ public class Carrera {
                     tercerPuestoNombre = conductorPosicion05.nombre;
                     tercerPuestoNacionalidad = conductorPosicion05.nacionalidad;
                     tercerPuestoKilometraje = conductorPosicion05.avance;
+                    tercerPuestoEquipo= conductorPosicion05.equipo;
                 } else {
                     //  Cuarto puesto
                     if (tablaPosiciones[2] == conductorPosicion05.avance) {
@@ -371,6 +405,7 @@ public class Carrera {
                         cuartoPuestoNombre = conductorPosicion05.nombre;
                         cuartoPuestoNacionalidad = conductorPosicion05.nacionalidad;
                         cuartoPuestoKilometraje = conductorPosicion05.avance;
+                        cuartoPuestoEquipo= conductorPosicion05.equipo;
                     } else {
                         //Quinto puesto
                         if (tablaPosiciones[1] == conductorPosicion05.avance) {
@@ -378,6 +413,7 @@ public class Carrera {
                             quintoPuestoNombre = conductorPosicion05.nombre;
                             quintoPuestoNacionalidad = conductorPosicion05.nacionalidad;
                             quintoPuestoKilometraje = conductorPosicion05.avance;
+                            quintoPuestoEquipo= conductorPosicion05.equipo;
                         } else {
                             //Sexto puesto
                             if (tablaPosiciones[0] == conductorPosicion05.avance) {
@@ -385,6 +421,7 @@ public class Carrera {
                                 sextoPuestoNombre = conductorPosicion05.nombre;
                                 sextoPuestoNacionalidad = conductorPosicion05.nacionalidad;
                                 sextoPuestoKilometraje = conductorPosicion05.avance;
+                                sextoPuestoEquipo= conductorPosicion05.equipo;
                             }
                         }
 
@@ -405,6 +442,7 @@ public class Carrera {
             primerPuestoNombre = conductorCarrera.nombre;
             primerPuestoNacionalidad = conductorCarrera.nacionalidad;
             primerPuestoKilometraje = conductorCarrera.avance;
+             primerPuestoEquipo= conductorCarrera.equipo;
         } else {
             //Segundo Puesto
             if (tablaPosiciones[4] == conductorCarrera.avance) {
@@ -412,6 +450,7 @@ public class Carrera {
                 segundoPuestoNombre = conductorCarrera.nombre;
                 segundoPuestoNacionalidad = conductorCarrera.nacionalidad;
                 segundoPuestoKilometraje = conductorCarrera.avance;
+                segundoPuestoEquipo= conductorCarrera.equipo;
             } else {
                 // Tercer Puesto
                 if (tablaPosiciones[3] == conductorCarrera.avance) {
@@ -419,6 +458,7 @@ public class Carrera {
                     tercerPuestoNombre = conductorCarrera.nombre;
                     tercerPuestoNacionalidad = conductorCarrera.nacionalidad;
                     tercerPuestoKilometraje = conductorCarrera.avance;
+                    tercerPuestoEquipo= conductorCarrera.equipo;
                 } else {
                     //  Cuarto puesto
                     if (tablaPosiciones[2] == conductorCarrera.avance) {
@@ -426,6 +466,7 @@ public class Carrera {
                         cuartoPuestoNombre = conductorCarrera.nombre;
                         cuartoPuestoNacionalidad = conductorCarrera.nacionalidad;
                         cuartoPuestoKilometraje = conductorCarrera.avance;
+                        cuartoPuestoEquipo= conductorCarrera.equipo;
                     } else {
                         //Quinto puesto
                         if (tablaPosiciones[1] == conductorCarrera.avance) {
@@ -433,6 +474,7 @@ public class Carrera {
                             quintoPuestoNombre = conductorCarrera.nombre;
                             quintoPuestoNacionalidad = conductorCarrera.nacionalidad;
                             quintoPuestoKilometraje = conductorCarrera.avance;
+                            quintoPuestoEquipo= conductorCarrera.equipo;
                         } else {
                             //Sexto puesto
                             if (tablaPosiciones[0] == conductorCarrera.avance) {
@@ -440,6 +482,7 @@ public class Carrera {
                                 sextoPuestoNombre = conductorCarrera.nombre;
                                 sextoPuestoNacionalidad = conductorCarrera.nacionalidad;
                                 sextoPuestoKilometraje = conductorCarrera.avance;
+                                sextoPuestoEquipo= conductorCarrera.equipo;
                             }
                         }
 
@@ -501,57 +544,79 @@ public class Carrera {
   
     public void tablaCarrera() {
         System.out.println("TABLA DE CARRERA");
-        System.out.println("----------------------------------------------------");
+        System.out.print("----------------------------------------------------");
+        System.out.print("----------------------------------------------------");
+        System.out.println("  ");
+        System.out.print("POSICIÓN|");
+        System.out.print("CONDUCTOR|");
+        System.out.print("PAIS|");
+        System.out.print("EQUIPO |");
+        System.out.print("KM  |");
         System.out.print("ID  |");
-        System.out.print("CONDUCTOR       |");
-        System.out.print("PAIS      |");
-        System.out.print("KM        |");
-        System.out.print("POSICIÓN         |");
         System.out.println(" ");
         //primer puesto tabla
-        System.out.println("----------------------------------------------------");
-        System.out.print(primerPuestoID + " |");
-        System.out.print(primerPuestoNombre + "|");
+        System.out.print("----------------------------------------------------");
+        System.out.print("----------------------------------------------------");
+        System.out.println("  ");
+        System.out.print("1*       |");
+        System.out.print(primerPuestoNombre + " |");
         System.out.print(primerPuestoNacionalidad + " |");
-        System.out.print(primerPuestoKilometraje + " |");
-        System.out.print("1* |");
+        System.out.print(primerPuestoEquipo + " |");
+        System.out.print(primerPuestoKilometraje + " Km |");
+         System.out.print(primerPuestoID + " |");
         //Segundo Puesto tabla
         System.out.println("  ");
-        System.out.println("----------------------------------------------------");
-        System.out.print(segundoPuestoID + " |");
-        System.out.print(segundoPuestoNombre + "|");
+        System.out.print("----------------------------------------------------");
+        System.out.print("----------------------------------------------------");
+        System.out.println("  ");
+        System.out.print("2*       |");
+        System.out.print(segundoPuestoNombre + " |");
         System.out.print(segundoPuestoNacionalidad + " |");
-        System.out.print(segundoPuestoKilometraje + " |");
-        System.out.print("2* |");
+        System.out.print(segundoPuestoEquipo + " |");
+        System.out.print(segundoPuestoKilometraje + " Km |");
+        System.out.print(segundoPuestoID + " |");
         System.out.println("   ");
-        System.out.println("----------------------------------------------------");
-        System.out.print(tercerPuestoID + " |");
-        System.out.print(tercerPuestoNombre + "|");
+        System.out.print("----------------------------------------------------");
+        System.out.print("----------------------------------------------------");
+        System.out.println("  ");
+        System.out.print("3*       |");
+        System.out.print(tercerPuestoNombre + " |");
         System.out.print(tercerPuestoNacionalidad + " |");
-        System.out.print(tercerPuestoKilometraje + " |");
-        System.out.print("3* |");
+        System.out.print(tercerPuestoEquipo + " |");
+        System.out.print(tercerPuestoKilometraje + " Km |");
+        System.out.print(tercerPuestoID + " |");
         System.out.println("  ");
-        System.out.println("----------------------------------------------------");
-        System.out.print(cuartoPuestoID + " |");
-        System.out.print(cuartoPuestoNombre + "|");
+        System.out.print("----------------------------------------------------");
+        System.out.print("----------------------------------------------------");
+        System.out.println("  ");
+        System.out.print("4         |");
+        System.out.print(cuartoPuestoNombre + " |");
         System.out.print(cuartoPuestoNacionalidad + " |");
-        System.out.print(cuartoPuestoKilometraje + " |");
-        System.out.print("4 |");
+        System.out.print(cuartoPuestoEquipo + " |");
+        System.out.print(cuartoPuestoKilometraje + " Km |");
+        System.out.print(cuartoPuestoID + " |");
         System.out.println("  ");
-        System.out.println("----------------------------------------------------");
+        System.out.print("----------------------------------------------------");
+        System.out.print("----------------------------------------------------");
+        System.out.println("  ");
+        System.out.print("5          |"); 
+        System.out.print(quintoPuestoNombre + " |");
+        System.out.print(quintoPuestoNacionalidad + "||");
+        System.out.print(quintoPuestoEquipo + " |");
+        System.out.print(quintoPuestoKilometraje + " Km |");
         System.out.print(quintoPuestoID + " |");
-        System.out.print(quintoPuestoNombre + "|");
-        System.out.print(quintoPuestoNacionalidad + " |");
-        System.out.print(quintoPuestoKilometraje + " |");
-        System.out.print("5 |");
         System.out.println("  ");
-        System.out.println("----------------------------------------------------");
-        System.out.print(sextoPuestoID +" |");
-        System.out.print(sextoPuestoNombre + "|");
+        System.out.print("----------------------------------------------------");
+        System.out.print("----------------------------------------------------");
+        System.out.println("  ");
+        System.out.print("6          |");
+        System.out.print(sextoPuestoNombre + " |");
         System.out.print(sextoPuestoNacionalidad + " |");
-        System.out.print(sextoPuestoKilometraje + " |");
-        System.out.print ("6 |");
+        System.out.print(sextoPuestoEquipo + " |");
+        System.out.print(sextoPuestoKilometraje + " Km |");
+        System.out.print(sextoPuestoID +" |");
         System.out.println("   ");
-        System.out.println("----------------------------------------------------");
+        System.out.print("----------------------------------------------------");
+        System.out.print("----------------------------------------------------");
     }
 }

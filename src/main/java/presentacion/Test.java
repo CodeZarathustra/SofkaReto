@@ -23,7 +23,7 @@ public class Test {
         Conductor ConductorUsuario= new Conductor("Jorge Armando Blandon","Colombia", 1047,"Mercedes", 0);
         Carro CarroUsuario= new Carro(ConductorUsuario, 06, "Mercedes");
         Carril carrilUsuario= new Carril(07, CarroUsuario);
-        Pista pistaCarreraActual= new Pista ("Indianapolis","EE.UU", 4000, 7, 00123);
+        Pista pistaCarreraActual= new Pista ("Indianapolis","EE.UU", 4000, 7, 06);
         ConductorMaquina cpu= new ConductorMaquina();
         cpu.creacionConductores();
         //newPane.createDialog("La carrera ha Comenzado ");
