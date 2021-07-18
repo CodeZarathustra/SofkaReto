@@ -74,11 +74,11 @@ public class Carrera {
       //Instanciar conductor Maquina
       ConductorMaquina nuevoConductorMaquina= new ConductorMaquina();
       ArrayList posiciones=nuevoConductorMaquina.creacionConductores();
-      conductorPosicion01= (Conductor)posiciones.get(1);
-      conductorPosicion02= (Conductor)posiciones.get(2);
-      conductorPosicion03= (Conductor)posiciones.get(3);
-      conductorPosicion04= (Conductor)posiciones.get(4);
-      conductorPosicion05= (Conductor)posiciones.get(5);
+      conductorPosicion01= (Conductor)posiciones.get(0);
+      conductorPosicion02= (Conductor)posiciones.get(1);
+      conductorPosicion03= (Conductor)posiciones.get(2);
+      conductorPosicion04= (Conductor)posiciones.get(3);
+      conductorPosicion05= (Conductor)posiciones.get(4);
       //Estructura While Carrera
       //while(conductorCarrera.avance<pistaCarrera.kilometros){
       //For para ala iteraciones  

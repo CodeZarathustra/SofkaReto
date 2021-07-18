@@ -11,6 +11,9 @@ public class Conductor {
     public String equipo;
     public double avance;
 
+    public Conductor() {
+    }
+
     public Conductor(String nombre, String nacionalidad, int IdConductor, String equipo, double avance) {
         this.nombre = nombre;
         this.nacionalidad = nacionalidad;
