@@ -2,6 +2,7 @@
 package dominio;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 
 public class Carrera {
@@ -443,6 +444,7 @@ public class Carrera {
             primerPuestoNacionalidad = conductorCarrera.nacionalidad;
             primerPuestoKilometraje = conductorCarrera.avance;
              primerPuestoEquipo= conductorCarrera.equipo;
+             JOptionPane.showMessageDialog(null,"Felicidades!");
         } else {
             //Segundo Puesto
             if (tablaPosiciones[4] == conductorCarrera.avance) {
@@ -543,6 +545,7 @@ public class Carrera {
 
   
     public void tablaCarrera() {
+        System.out.println("--------------------------------------------------");
         System.out.println("TABLA DE CARRERA");
         System.out.print("----------------------------------------------------");
         System.out.print("----------------------------------------------------");
