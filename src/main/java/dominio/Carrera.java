@@ -90,16 +90,13 @@ public class Carrera {
         conductorPosicion03 = (Conductor) posiciones.get(2);
         conductorPosicion04 = (Conductor) posiciones.get(3);
         conductorPosicion05 = (Conductor) posiciones.get(4);
-        //Estructura While Carrera
-        //while(conductorCarrera.avance<pistaCarrera.kilometros){
-        //For para ala iteraciones  
+       
     }
     //--------------------------------------------------------------------------
   //Metodo para definir podium
     public void definirTablaPosiciones() {
     
-    //Acumular Kilometraje en una variables para cada conductor. Hasta que se cumpla el condicional de que 
-    //todos los valores del array hayan sobre pasado el valor en Kilometros de la pista de Carrera
+    
         //do {
             tablaPosiciones = new double[nElementos];
             tablaPosiciones[0] = conductorPosicion01.avance;
@@ -121,9 +118,6 @@ public class Carrera {
                 }
             }
         } 
-/*while (pistaCarrera.kilometros == tablaPosiciones[0] || pistaCarrera.kilometros == tablaPosiciones[1]
-                || pistaCarrera.kilometros == tablaPosiciones[2] || pistaCarrera.kilometros == tablaPosiciones[3]
-                || pistaCarrera.kilometros ==tablaPosiciones[4] || pistaCarrera.kilometros == tablaPosiciones[5]);*/
  
     
    //--------------------------------------------------------------------------
@@ -620,18 +614,19 @@ public class Carrera {
     }
     //--------------------------------------------------------------------------
 // Metodo para insertar datos podio
-    public void guardarDatos () {
-       ConductorDAO nuevoCondao= new ConductorDAO();
-       nuevoCondao.insertar(conductorPosicion01);
-       nuevoCondao.insertar(conductorPosicion02);
-       nuevoCondao.insertar(conductorPosicion03);
-       nuevoCondao.insertar(conductorPosicion04);
-       nuevoCondao.insertar(conductorPosicion05);
-       nuevoCondao.insertar(conductorCarrera);
-       
+    public void guardarDatos() {
+        ConductorDAO nuevoCondao = new ConductorDAO();
+        nuevoCondao.insertar(conductorPosicion01);
+        nuevoCondao.insertar(conductorPosicion02);
+        nuevoCondao.insertar(conductorPosicion03);
+        nuevoCondao.insertar(conductorPosicion04);
+        nuevoCondao.insertar(conductorPosicion05);
+        nuevoCondao.insertar(conductorCarrera);
+
         System.out.println("---------------------------------------------------");
         System.out.println("LOS DATOS DE LOS PARTICIPANTES HAN SIDO GUARDADOS");
-    };
+    }
+;
 
 
 

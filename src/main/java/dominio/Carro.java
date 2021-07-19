@@ -1,19 +1,18 @@
 
 package dominio;
 
-
 public class Carro {
+
     //Atributos 
     public Conductor conductorCarro;
     public int idCarro;
     public String marca;
-   
 
     public Carro(Conductor conductorCarro, int idCarro, String marca) {
         this.conductorCarro = conductorCarro;
         this.idCarro = idCarro;
         this.marca = marca;
-       
+
     }
 
     public Conductor getConductorCarro() {
@@ -39,6 +38,5 @@ public class Carro {
     public void setMarca(String marca) {
         this.marca = marca;
     }
-    
- 
+
 }

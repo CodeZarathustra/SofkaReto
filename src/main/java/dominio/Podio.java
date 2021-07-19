@@ -1,20 +1,17 @@
-
 package dominio;
 
-
 public class Podio {
-    
+
     //Atributos
     public String primerPuesto;
     public String segundoPuesto;
     public String tercerPuesto;
-    
-    
-    public void definirPodio (String primerPuesto, String segundoPuesto,String tercerPuesto){
-        this.primerPuesto=primerPuesto;
-        this.segundoPuesto=segundoPuesto;
-        this.tercerPuesto=tercerPuesto;
-}
+
+    public void definirPodio(String primerPuesto, String segundoPuesto, String tercerPuesto) {
+        this.primerPuesto = primerPuesto;
+        this.segundoPuesto = segundoPuesto;
+        this.tercerPuesto = tercerPuesto;
+    }
 
     public String getPrimerPuesto() {
         return primerPuesto;
@@ -40,5 +37,4 @@ public class Podio {
         this.tercerPuesto = tercerPuesto;
     }
 
-   
 }

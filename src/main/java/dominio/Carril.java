@@ -1,10 +1,8 @@
-
 package dominio;
 
-
 public class Carril {
-   
-   //atributos
+
+    //atributos
     public int numeroCarril;
     Carro carroAsignado;
 
@@ -29,7 +27,4 @@ public class Carril {
         this.carroAsignado = carroAsignado;
     }
 
-    
-
-    
 }
