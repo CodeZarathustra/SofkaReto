@@ -578,6 +578,7 @@ public class Carrera {
         System.out.println("   ");
         System.out.print("----------------------------------------------------");
         System.out.print("----------------------------------------------------");
+        System.out.println("   ");
     }
     //--------------------------------------------------------------------------
     public void imprimirPodio () {
@@ -598,14 +599,17 @@ public class Carrera {
         System.out.println("----------------------------------------------------");
         System.out.print("|1  |");
         System.out.print("| "+ nuevoPodio.primerPuesto+ " |");
+        System.out.println("  ");
         System.out.println("----------------------------------------------------");
         System.out.println("  ");
         System.out.print("|2  |");
         System.out.print("| "+ nuevoPodio.segundoPuesto+ " |");
+        System.out.println("  ");
         System.out.println("----------------------------------------------------");
         System.out.println("  ");
         System.out.print("|3  |");
         System.out.print("| "+ nuevoPodio.tercerPuesto+ " |");
+        System.out.println("  ");
         System.out.println("----------------------------------------------------");
         
         if (conductorCarrera.nombre==nuevoPodio.primerPuesto) {

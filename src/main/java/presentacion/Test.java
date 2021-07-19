@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
 
 
 
+
 public class Test {
     
     public static void main(String[] args) {
@@ -26,7 +27,8 @@ public class Test {
         //ValoresCarrera
         String nombreCarrera= "200 millas de Indianapolis";
         String fechaCarrera= "30-Julio-2021";
-       
+        //int imput;
+        //int input;
         
         Scanner sc= new Scanner(System.in);
         //Mensaje de Entrada
@@ -46,6 +48,7 @@ public class Test {
         Carro CarroUsuario= new Carro(ConductorUsuario, 06, marcaAutoJugador);
         Carril carrilUsuario= new Carril(06, CarroUsuario);
         Pista pistaCarreraActual= new Pista (nombrePista,paisPista,longitudPista, numeroCarriles, codigoPista);
+        
         //Datos de Pista
         System.out.println("----------------------------------------------------");
         System.out.println("DATOS DE PISTA");
@@ -78,10 +81,12 @@ public class Test {
         System.out.println("*****************************************************");
         
         for (int i=0;i<3;i++) {
-            int imput;
-            imput = JOptionPane.showConfirmDialog(null,"Lanzar dado","Buena Suerte!",JOptionPane.DEFAULT_OPTION);
             
-            if(imput==0) {
+       System.out.println("INTENTO # "+ i);
+       System.out.println("Lanzado dado!");
+       System.out.println("Good luck!");
+       System.out.println("-----------------------------------------------");
+      
         nuevaCarrera.sacarConductores();
         nuevaCarrera.avanceCarrera(ConductorUsuario);
         nuevaCarrera.definirTablaPosiciones();
@@ -93,7 +98,7 @@ public class Test {
         nuevaCarrera.definirPodioConductorCarrera();
         nuevaCarrera.tablaCarrera();
         
-            }   
+              
         
     }
         nuevaCarrera.imprimirPodio();
